@@ -1,0 +1,104 @@
+.reviews-page-intro {
+    padding-top: 252px;
+    padding-bottom: 193px;
+
+    min-height: 600px;
+
+    background: url(../img/reviews-page/intro-bg.png) center top / cover no-repeat;
+    position: relative;
+
+    @media (max-width: 999px) {
+        padding-top: 146px;
+
+        background-size: auto 70%;
+        background-position-x: 50%;
+        background-position-y: 120%;
+    }
+
+    @media (max-width: 767px) {
+        background-position-x: 100%;
+    }
+
+    @media (max-width: 479px) {
+        background-size: auto 60%;
+        background-position-x: 90%;
+        background-position-y: 110%;
+    }
+
+}
+
+.reviews-page-intro__mask {
+    @media (max-width: 999px) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+
+        width: 100%;
+        height: 45%;
+        background: linear-gradient(180deg, #CFA37D 82.46%, rgba(240, 227, 212, 0) 100%);
+    }
+
+    @media (max-width: 479px) {
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(180deg, #CFA37D 82.46%, rgba(253, 250, 247, 0) 94.1%);
+    }
+}
+
+.reviews-page-intro__content {
+    position: relative;
+    z-index: 12;
+}
+
+.reviews-page-intro__title {
+    max-width: 490px;
+    font-family: Canela;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    @media (max-width: 999px) {
+        margin: 0 auto;
+        font-size: 45px;
+        line-height: 52px;
+        text-align: center;
+    }
+
+    @media (max-width: 479px) {
+        width: 85%;
+        font-size: 28px;
+        line-height: 44px;
+    }
+}
+
+.reviews-page-intro__subtitle {
+    margin-top: 28px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    @media (max-width: 999px) {
+        margin-top: 14px;
+
+        text-align: center;
+        font-size: 14px;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 12px;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

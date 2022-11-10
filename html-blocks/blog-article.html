@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <title>MATCHA&CO</title>
+</head>
+<body>
+
+    <div class="fixed-info" id="fixedInfoBlock">
+        <div class="container">
+            <div class="fixed-info__inner">
+                FREE shipping on orders over £55!
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container container--header">
+            <div class="header__inner">
+                <button id="headerBurger" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <a href="#" class="header__logo">
+                    <img id="logoDark" src="../img/logo-dark.svg" alt="imadi-logo" class="header__logo-img">
+                    <img id="logoWhite" src="../img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                </a>
+                <nav id="menuWrapper" class="nav">
+                        <div class="nav-wrapper">
+                            <a href="#" class="nav__link">Products</a>
+                            <a href="#" class="nav__link">Subscription</a>
+                        </div>
+                        <div class="nav-wrapper">
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Matcha</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Tea</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Supplements</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="nav__link nav__link--login">Log in</a>
+                        </div>
+                </nav>
+
+                <div class="header__cart">
+                    <a href="#" class="cart">
+                        <img src="../img/icons/cart.svg" alt="cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="whiteBg" class="article">
+        <div class="container">
+                <h2 class="article__label">Snacks</h2>
+                <h1 class="section__title section__title--blog">
+                    Guacamole with mint and matcha tea                
+                </h1>
+                <div class="article__summary">
+                    <div class="article__summary-item">
+                        <img src="../img/icons/blog-article/time-check.svg" class="article__summary-icon">
+                        <span class="article__summary-title">10-12 <span class="mobile-hidden">min</span></span>
+                    </div>
+                    <div class="article__summary-item">
+                        <img src="../img/icons/blog-article/persons.svg" class="article__summary-icon">
+                        <span class="article__summary-title">2-3 <span class="mobile-hidden">persons</span></span>
+                    </div>
+                    <div class="article__summary-item">
+                        <img src="../img/icons/blog-article/star.svg" class="article__summary-icon">
+                        <span class="article__summary-title">4.7 <span class="mobile-hidden">rating</span></span>
+                    </div>
+                </div>
+
+                <div class="article__text">
+
+                    <div class="article__image article__image--main">
+                        <img src="../img/blog-article/main.png" alt="article-photo" class="article__img">
+                    </div>
+
+                    <p class="article__paragraph">
+                        This is great twist on the traditional guacamole recipe with zingy lime, garlic and healthy boost of green matcha powder. Matcha powder add colour and flavour, but more importantly vitamins, minerals and properties similar to a caffeine, which are great for boosting your energy. Making guacamole is very easy – just mash the avocado first and add the rest of the ingredients and mix until nice and smooth. Serve with tortila chips, simple tortilla wraps, meat or cheese or anything else you want to dip it! This is great twist on the traditional guacamole recipe with zingy lime, garlic and healthy boost of green matcha powder.
+                    </p>
+    
+                    <h2 class="article__title">Few tips on making the perfect guacamole</h2>
+
+                    <h3 class="article__subtitle">Avocado</h3>
+
+                    <p class="article__paragraph">
+                        Whilst it’s fine to be creative with the additional ingredients, to get that perfect guacamole dip, you need to start with the perfect avocado. Your avocado needs to be perfectly ripened. This means that the avocado should be soft (but not brown or blotchy inside) and the avocado flesh should just come off easily when you scope it out. If your avocado is not ripen properly, don’t use it as won’t be able to achieve that intense avocado flavour – your guacamole could taste like a watery cucumber.
+                    </p>
+
+                    <div class="article__image">
+                        <img src="../img/blog-article/main-2.png" alt="article-photo" class="article__img">
+                    </div>
+
+                    <h2 class="article__title">About product</h2>
+
+                    <p class="article__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
+
+                    </p>
+
+                    <p class="article__paragraph">     
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
+                    </p>
+
+                    <div class="article__print">
+                        <div class="article__rating">
+                            <span class="article__rating-el">
+                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                            </span>
+                            <span class="article__rating-el">
+                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                            </span>
+                            <span class="article__rating-el">
+                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                            </span>
+                            <span class="article__rating-el">
+                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                            </span>
+                            <span class="article__rating-el">
+                                <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                            </span>
+                            <span class="article__rating-reviews-count">2</span>
+                            <span class="article__rating-reviews-desc">Reviews</span>
+                        </div>
+                        <div class="article__print-image">
+                            <img src="../img/blog-article/main.png" alt="article-thumbnail" class="article__print-img">
+                        </div>
+                        <h2 class="article__title article__title--print">Guacamole with mint and matcha tea</h2>
+                        <div class="article__print-btn">
+                            <div class="btn-container btn-container--center">
+                                <a href="#" class="btn btn--main-bg btn--padding-l"><span class="btn__title">print Recipe</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="article__title">Ingredients</h2>
+
+                    <ul class="article__list">
+                        <li class="article__list-el">1 avocado</li>
+                        <li class="article__list-el">1 teaspoon lime juice</li>
+                        <li class="article__list-el">1/4 teaspoon lime zest</li>
+                    </ul>
+
+                    <h2 class="article__title">Instructions</h2>
+
+                    <ul class="article__img-list">
+                        <li class="article__img-list-card">
+                            <div class="article__img-list-photo">
+                                <img src="../img/blog-article/instructions-img.jpg"  alt="instruction-photo">
+                            </div>
+                            <div class="article__img-list-desc">
+                                <div class="article__img-list-num">
+                                    01
+                                </div>
+                                <span>Cut the avocado in half and remove the pip.</span>
+                            </div>
+                        </li>
+                        <li class="article__img-list-card">
+                            <div class="article__img-list-photo">
+                                <img src="../img/blog-article/instructions-img.jpg"  alt="instruction-photo">
+                            </div>
+                            <div class="article__img-list-desc">
+                                <div class="article__img-list-num">
+                                    02
+                                </div>
+                                <span>Add all the other ingredients (garlic, salt, pepper, green matcha, lime juice and zest) and mix until smooth.</span>
+                            </div>
+                        </li>
+                        <li class="article__img-list-card">
+                            <div class="article__img-list-photo">
+                                <img src="../img/blog-article/instructions-img.jpg"  alt="instruction-photo">
+                            </div>
+                            <div class="article__img-list-desc">
+                                <div class="article__img-list-num">
+                                    03
+                                </div>
+                                <span>Cut the avocado in half and remove the pip.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="article__title">Other ingredients you can add to your guacamole</h2>
+                    <p class="article__paragraph">
+                        This is just a suggestion, so what else you can add to your guacamole? You probably don’t want to add all of these in, just choose a combination of 2-3 ingredients that works for you.
+                    </p>
+
+                    <ul class="article__list">
+                        <li class="article__list-el">Lemon Juice or Lemon Zest (instead of lime)</li>
+                        <li class="article__list-el">Chopped Onion</li>
+                        <li class="article__list-el">Chopped tomato</li>
+                        <li class="article__list-el">Jalapenos</li>
+                        <li class="article__list-el">Scallions</li>
+                    </ul>
+
+                </div>
+        </div>
+    </section>
+
+    <div class="recipe-blog">
+        <div class="container">
+            <h2 class="article__title">More Snacks Recipes</h2>
+
+            <div class="recipe-blog__slider">
+                <div class="recipe-blog__wrapper">
+                    <div class="swiper-container swiper-recipe-blog">
+                        <div class="swiper-wrapper">
+
+                          <div class="swiper-slide recipe-blog-slide">
+                                <div class="recipe-blog-slide__wrapper">
+                                    <div class="recipe-blog__photo">
+                                        <img src="../img/blog-article/main.png" alt="article-image" class="recipe-blog__photo-img">
+                                    </div>
+                                    <div class="recipe-blog__content">
+                                        <h3 class="article__label article__label--recipe-blog">Snacks</h3>
+                                        <h2 class="section__title section__title--recipe-blog">
+                                            Guacamole with mint and matcha tea                
+                                        </h2>
+
+                                        <div class="article__rating article__rating--recipe-blog">
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-reviews-count">2</span>
+                                            <span class="article__rating-reviews-desc">Reviews</span>
+                                        </div>
+
+                                        <div class="recipe-blog__short-desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis
+                                        </div>
+
+                                        <div class="recipe-blog__summary">
+                                                <div class="article__summary-item">
+                                                    <img src="../img/icons/blog-article/time-check.svg" class="article__summary-icon">
+                                                    <span class="article__summary-title">10-12 min</span>
+                                                </div>
+                                                <div class="article__summary-item">
+                                                    <img src="../img/icons/blog-article/persons.svg" class="article__summary-icon">
+                                                    <span class="article__summary-title">2-3 persons</span>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                          </div>
+        
+                          <div class="swiper-slide recipe-blog-slide">
+                                <div class="recipe-blog-slide__wrapper">
+                                    <div class="recipe-blog__photo">
+                                        <img src="../img/blog-article/main.png" alt="article-image" class="recipe-blog__photo-img">
+                                    </div>
+                                    <div class="recipe-blog__content">
+                                        <h3 class="article__label article__label--recipe-blog">Snacks</h3>
+                                        <h2 class="section__title section__title--recipe-blog">
+                                            Guacamole with mint and matcha tea                
+                                        </h2>
+
+                                        <div class="article__rating">
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-el">
+                                                <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                                            </span>
+                                            <span class="article__rating-reviews-count">2</span>
+                                            <span class="article__rating-reviews-desc">Reviews</span>
+                                        </div>
+
+                                        <div class="recipe-blog__short-desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis
+                                        </div>
+
+                                        <div class="recipe-blog__summary">
+                                                <div class="article__summary-item">
+                                                    <img src="../img/icons/blog-article/time-check.svg" class="article__summary-icon">
+                                                    <span class="article__summary-title">10-12 min</span>
+                                                </div>
+                                                <div class="article__summary-item">
+                                                    <img src="../img/icons/blog-article/persons.svg" class="article__summary-icon">
+                                                    <span class="article__summary-title">2-3 persons</span>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                          </div>
+        
+                        </div>
+                        
+                    </div>
+        
+                    <div class="swiper-pagination-wrapper">
+                        <div class="swiper-pagination swiper-section-pagination recipe-blog-pagination">
+                            <div class="swiper-section-pagination__el recipe-blog-pagination__el swiper-section-pagination__el--active"></div>
+                            <div class="swiper-section-pagination__el"></div>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-nav-btns swiper-nav-btns--testimonials">
+                        <div id="swiperRecipeBlogPrev" class="swiper-button-prev swiper-button-prev--no-indent">
+                            <img class="swiper-button-icon" src="../img/icons/arrow-prev-gray.svg" alt="btn-prev">
+                        </div>
+                        <div id="swiperRecipeBlogBtnNext" class="swiper-button-next swiper-button-next--no-indent">
+                            <img class="swiper-button-icon" src="../img/icons/arrow-next-gray.svg" alt="btn-next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article__reviews">
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__header">
+                    <h2 class="reviews__title">REVIEWS <span class="reviews__count">(2)</span></h2>
+                    <div class="article__rating">
+                        <span class="article__rating-el">
+                            <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                        </span>
+                        <span class="article__rating-el">
+                            <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                        </span>
+                        <span class="article__rating-el">
+                            <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                        </span>
+                        <span class="article__rating-el">
+                            <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                        </span>
+                        <span class="article__rating-el">
+                            <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="reviews__body">
+                    <div class="reviews__el">
+                        <div class="reviews__row">
+                            <div class="reviews__row-item">
+                                <div class="reviews__el-title">
+                                    <span class="reviews__el-name">Ryan Stanton</span>
+                                    <span class="reviews__el-verified">
+                                        <img class="reviews__el-verified-icon" src="../img/icons/verified.svg" alt="verified-icon">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="reviews__row-item">
+                                <div class="article__rating">
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="reviews__row">
+                            <div class="reviews__row-item">
+                                <div class="reviews__date">12/03/2019</div>
+                            </div>
+                            <div class="reviews__row-item">
+                                <div class="reviews__text">
+                                    Fantastic tea, it is great and at an unbeatable price. I will continue to buy my Matcha tea here. Goodbye to toxic coffee!
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="reviews__el">
+                        <div class="reviews__row">
+                            <div class="reviews__row-item">
+                                <div class="reviews__el-title">
+                                    <span class="reviews__el-name">Ryan Stanton</span>
+                                    <span class="reviews__el-verified">
+                                        <img class="reviews__el-verified-icon" src="../img/icons/verified.svg" alt="verified-icon">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="reviews__row-item">
+                                <div class="article__rating">
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon article__rating-icon--selected" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                    <span class="article__rating-el">
+                                        <img class="article__rating-icon" src="../img/icons/rating-star.svg" alt="rating-star">
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="reviews__row">
+                            <div class="reviews__row-item">
+                                <div class="reviews__date">12/03/2019</div>
+                            </div>
+                            <div class="reviews__row-item">
+                                <div class="reviews__text">
+                                    Fantastic tea, it is great and at an unbeatable price. I will continue to buy my Matcha tea here. Goodbye to toxic coffee!
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form class="reviews__form">
+                    <div class="reviews__form__title">Add your review</div>
+                    <div class="form">
+                        <div class="form__wrapper">
+                            <div class="form__row form__row--half">
+                                <div class="form__el form__el--half">
+                                    <label class="form__label" for="reviewsName">Name</label>
+                                    <input class="form__input" type="text" placeholder="Enter your name" id="reviewsName">
+                                </div>
+                                <div class="form__el form__el--half">
+                                    <label class="form__label" for="reviewsEmail">Email</label>
+                                    <input class="form__input" type="text" placeholder="Enter your email" id="reviewsEmail">
+                                </div>
+                            </div>
+                            <div class="form__row">
+                                <div class="form__el">
+                                    <div class="form__label">Score</div>
+                                    <div class="article__rating">
+                                        <span class="article__rating-el">
+                                            <img class="article__rating-icon article__rating-icon--reviews" style="width: 22px;" src="../img/icons/rating-star-no-fill.svg" alt="rating-star">
+                                        </span>
+                                        <span class="article__rating-el">
+                                            <img class="article__rating-icon article__rating-icon--reviews" style="width: 22px;" src="../img/icons/rating-star-no-fill.svg" alt="rating-star">
+                                        </span>
+                                        <span class="article__rating-el">
+                                            <img class="article__rating-icon article__rating-icon--reviews" style="width: 22px;" src="../img/icons/rating-star-no-fill.svg" alt="rating-star">
+                                        </span>
+                                        <span class="article__rating-el">
+                                            <img class="article__rating-icon article__rating-icon--reviews" style="width: 22px;" src="../img/icons/rating-star-no-fill.svg" alt="rating-star">
+                                        </span>
+                                        <span class="article__rating-el">
+                                            <img class="article__rating-icon article__rating-icon--reviews" style="width: 22px;" src="../img/icons/rating-star-no-fill.svg" alt="rating-star">
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form__row">
+                                <div class="form__el">
+                                    <label class="form__label" for="reviewsComment">Comment</label>
+                                    <textarea class="form__input form__input--textarea" type="text" placeholder="Share your thoughts about this product" id="reviewsComment"></textarea>
+                                </div>
+                                
+                            </div>
+
+                            <div class="form__btn">
+                                <div class="btn-container btn-container--right">
+                                    <button type="submit" class="btn btn--main-bg"><span class="btn__title">publish my review</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col-group">
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">EVERYTHING ABOUT MATCHA</div>
+                                <div class="footer__dropdown-icon">
+                                                  
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">What is Matcha</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Properties of matcha tea</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha tea benefits</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">How to prepare</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Buyers’ Guide</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">SUPPORT</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Privacy Policy</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Contact us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">ABOUT US</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">About us</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Wholesale</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--info">
+                    <h3 class="footer__title footer__title--info">Subscribe to our Newsletter</h3>
+                    <h4 class="footer__subtitle">Get a 10% coupon discount on your 
+                        first order</h4>
+                    
+                    
+                    <form class="footer__form">
+                        <input class="footer__input" type="text" placeholder="Enter your email address">
+                        <div class="footer__btn">
+                            <div class="btn-container btn-container--center">
+                                <button type="submit" class="btn btn--main-bg btn--footer-form"><span class="btn__title btn__title--footer-form">Subscribe</span>
+                                <img class="btn__title-icon btn__title-icon--footer" src="../img/icons/send.svg" alt="send-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer__hr">
+            <div class="footer__bottom">
+                <div class="footer__bottom-group">
+                    <a href="#" class="header__logo">
+                        <img src="../img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                    </a>
+                    <div class="footer__copyright">
+                        © 2021 matchaandco.co.uk <br>
+                        All rights reserved
+                    </div>
+                </div>
+                <div class="footer__bottom-group">
+                    <div class="footer__bottom-btn">
+                        <div class="btn-container btn-container--center">
+                            <button type="submit" class="btn btn--main-bg-l"><span class="btn__title">Contact Us</span></button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/facebook.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/twitter.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/instagram.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="../index.bundle.js"></script>
+</body>
+</html>

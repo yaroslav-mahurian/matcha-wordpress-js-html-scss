@@ -1,0 +1,122 @@
+.recipes-head__wrapper {
+    background: rgba(251, 247, 241, 0.6);
+}
+
+.recipes-head__inner {
+    padding-top: 189px;
+    padding-bottom: 314px;
+
+    position: relative;
+
+    @media (max-width: 999px) {
+        padding-top: 146px;
+        padding-bottom: 232px;
+    }
+}
+
+.recipes-head-slider-block {
+    background-color: $white;
+}
+
+.recipes-head-slider {
+    position: relative;
+    top: -264px;
+
+    @media (max-width: 999px) {
+        top: -200px;
+        padding-left: 15px;
+    }
+}
+
+.recipes-head-slider__link {
+    &:hover {
+        text-decoration-color: #705F5E;
+    }
+ 
+}
+
+.swiper-recipes-head {
+    padding-bottom: 20px;
+}
+
+.recipes-head-slide {
+    @media (max-width: 1199px) {
+        width: 264px;
+    }
+
+    @media (max-width: 999px) {
+        width: 200px !important;
+    }
+}
+
+.recipes-head-slider__el {
+    box-shadow: 0px 8px 16px rgba(26, 38, 80, 0.06);
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.recipes-head-slider__photo {
+    width: 264px;
+    height: 264px;
+
+    @media (max-width: 999px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.recipes-head-slider__photo-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.recipes-head-slider__content {
+    width: 264px;
+    padding: 13px 0;
+    padding-left: 28px;
+
+    background-color: $white;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    @media (max-width: 999px) {
+        width: 200px;
+    }
+}
+
+.recipes-head-slider__title {
+    font-family: Canela;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #705F5E;
+}
+
+.recipes-head-slider__subtitle {
+    margin-top: 4px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #808080;
+}
+
+.recipes-head__btn {
+    margin-top: 40px;
+
+    @media (max-width: 999px) {
+        margin-top: 20px;
+    }
+}

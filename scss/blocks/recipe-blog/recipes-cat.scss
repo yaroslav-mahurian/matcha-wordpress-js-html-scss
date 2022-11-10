@@ -1,0 +1,40 @@
+.recipes-cat {
+    padding: 100px 0;
+
+    background: rgba(251, 247, 241, 0.6);
+
+    &:nth-child(odd) {
+        background-color: $white;
+    }
+
+    &:first-child {
+        margin-top: $recipes-indent-desktop;
+        padding-top: 120px;
+
+
+    }
+
+    @media (max-width: 999px) {
+        &:first-child {
+            margin-top: $recipes-indent-mobile;
+            padding-top: 80px;
+        }
+    }
+}
+
+.recipes-cat__slider {
+    margin-top: 60px;
+
+    @media (max-width: 999px) {
+        margin-top: 32px;
+    }
+}
+
+.recipes-cat__btn {
+    margin-top: 60px;
+
+    @media (max-width: 999px) {
+        margin-top: 40px;
+    }
+}
+

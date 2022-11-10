@@ -1,0 +1,19 @@
+.about-footer {
+    background: url(../img/about/about-footer-bg.png) center top / cover no-repeat;
+
+    position: relative;
+
+    @media (max-width: 767px) {
+        background: url(../img/about/about-footer-bg-mobile.svg) center top / cover no-repeat;
+    }
+}
+
+
+.about-footer__inner {
+    padding-top: 280px;
+    padding-bottom: 220px;
+
+    @media (max-width: 767px) {
+        padding-top: 95px;
+    }
+}

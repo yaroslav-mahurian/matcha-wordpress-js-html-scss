@@ -1,0 +1,20 @@
+.blog-categories {
+    padding-top: 210px;
+    padding-bottom: 80px;
+
+    @media (max-width: 999px) {
+        padding-top: 146px;
+        padding-bottom: 45px;
+    }
+}
+
+.blog-categories__count {
+  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #705F5E;
+}

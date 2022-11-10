@@ -1,0 +1,31 @@
+.product-blog {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background-color: $white;
+
+    @media (max-width: 479px) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+.product-blog__link {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #D89C70;
+    display: inline-block !important;
+
+}
+
+.swiper-section-pagination {
+    &.product-blog-pagination {
+        transform: translate3d(0, 0, 0) !important;
+    }
+}

@@ -1,0 +1,74 @@
+.form-login-container {
+    padding-top: 219px;
+    padding-bottom: 100px;
+
+    @media (max-width: 768px) {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+}
+
+.show-password-input {
+    display: none;
+    opacity: 0;
+}
+
+.login-title {
+    font-family: Canela;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+
+    text-align: center;
+
+    color: #705F5E;
+
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+    border: none;
+    margin: 0 auto;
+
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+    &:focus {
+        border-color: $main;
+    }
+}
+
+.woocommerce-form-login {
+    max-width: 740px;
+    
+}
+
+
+.lost_password {
+    margin-top: 11px;
+
+    text-align: center;
+    @media (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.login-lost-pass-title {
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #705F5E;
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,247 @@
+.header {
+    background-color: transparent;
+    padding: 17px 0;
+    position: fixed;
+    top: 39px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: $header-height;
+    transition: background-color .1s ease-out;
+
+    .cart-img {
+        display: block;
+    }
+
+    .cart-img-white {
+        display: none;
+    }
+
+    .nav__dropdown-icon-img {
+        & path {
+            fill: #705F5E;
+        }
+    }
+
+    &--product {
+        position: static;
+        background-color: rgba(251,247,241,0.6);
+    }
+
+
+    &--white-content {
+        color: $white;
+
+        .nav__link {
+            color: $white;
+
+            &:after {
+                background-color: $white;
+            }
+        }
+
+        .nav__dropdown-title {
+            color: $white;
+        }
+
+        .nav__dropdown-icon-img {
+            & path {
+                fill: $white;
+            }
+        }
+
+        .cart-img {
+            display: none;
+        }
+    
+        .cart-img-white {
+            display: block;
+        }
+        
+
+        @media (max-width: 999px) {
+            .hamburger-inner {
+                background-color: $white;
+
+                &:before, &:after {
+                    background-color: $white;
+                }
+            }
+
+            .nav__link {
+                color: #705F5E;
+            }
+            
+            .nav__dropdown-title {
+                color: #705F5E;
+            }
+
+            .dropdown-icon-mobile {
+                & path {
+                    fill: #705F5E;
+                }
+            }
+        }
+    }
+
+    &--sticky {
+        background-color: $white;
+        box-shadow: 0px 8px 16px rgba(112, 95, 94, 0.04);
+
+        .nav__link {
+            color: #705F5E;
+
+            &:after {
+                background-color: #705F5E;
+            }
+        }
+        
+        .nav__dropdown-title {
+            color: #705F5E;
+        }
+
+        .nav__dropdown-icon-img {
+            & path {
+                fill: #705F5E;
+            }
+        }
+
+        .dropdown-icon-mobile {
+            & path {
+                fill: #705F5E;
+            }
+        }
+
+        .cart-img {
+            display: block;
+        }
+    
+        .cart-img-white {
+            display: none;
+        }
+
+        .hamburger-inner {
+            background-color: #705F5E;
+
+            &:before, &:after {
+                background-color: #705F5E;
+            }
+        }
+    }
+
+    @media (max-width: 999px) {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: $header-height-sm;
+
+        padding: 7px 15px;
+    }
+
+    @media print {
+        display: none;   
+    }
+}
+
+.header__cart {
+    .cart {
+        position: relative;
+
+
+        .cart__count {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #705F5E;
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 150%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #FFFFFF;
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 10;
+            transform: translate3d(35px, 0%, 0);
+        }
+    }
+
+
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 999px) {
+        margin: 0 -5px;
+        display: flex;
+        justify-content: space-between;
+    }    
+}
+
+.header__logo {
+    margin-right: 30px;
+
+    @media (max-width: 999px) {
+        margin-right: 0;
+    }   
+}
+
+.header__logo-img {
+    width: 88px;
+    @media (max-width: 999px) {
+        width: 52px;
+    }   
+}
+
+.header__cart {
+    margin-left: 30px;
+
+    @media (max-width: 999px) {
+        padding-right: 5px;
+        margin-left: 0;
+    }   
+}
+
+.hamburger {
+    display: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:active {
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (max-width: 999px) {
+        display: block;
+    }  
+}
+
+.xoo-wsc-basket {
+    position: static !important;
+    background-color: transparent !important;
+    padding: 0;
+    z-index: auto;
+    box-shadow: none !important;
+}
+
+.nav-wrapper__inner {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 999px) {
+        display: block;
+    }
+}

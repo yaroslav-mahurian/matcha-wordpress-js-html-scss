@@ -1,0 +1,154 @@
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Montserrat;
+    user-select: none;
+
+    cursor: pointer;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  
+.custom-select {
+    & select {
+        display: none; /*hide original SELECT element: */
+    }
+}
+
+.custom-select-product {
+    position: relative;
+    font-family: Montserrat;
+    user-select: none;
+
+    cursor: pointer;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  
+.custom-select-product {
+    & select {
+        display: none; /*hide original SELECT element: */
+    }
+}
+
+.side-cart-custom-select {
+    position: relative;
+    font-family: Montserrat;
+    user-select: none;
+
+    cursor: pointer;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+  
+.side-cart-custom-select {
+    & select {
+        display: none; /*hide original SELECT element: */
+    }
+}
+
+.select-selected {
+    background-color: $white;
+
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-radius: 4px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 170%;
+
+    color: #808080;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected {
+    padding: 12px;
+    padding-right: 45px;
+    padding-left: 34px;
+    white-space: nowrap;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        background: url('../img/icons/refresh.svg') center center / cover no-repeat;
+
+        position: absolute;
+        left: 12px;
+        top: 50%;
+
+        transform: translate3d(0, -50%, 0);
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-color: #808080 transparent transparent transparent;
+
+        transform: translate3d(0, -25%, 0);
+    }
+
+    &--active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &:after {
+            transform: rotate(180deg) translate3d(0, 75%, 0);
+        }
+    }
+}
+
+/* style the items (options), including the selected item: */
+.select-items {
+    & div,.select-selected {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 170%;
+        color: #808080;
+        padding: 12px;
+        padding-right: 24px;
+        padding-left: 34px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        cursor: pointer;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: $white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    border-top: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items {
+    & div {
+        &:hover, .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+    }
+}

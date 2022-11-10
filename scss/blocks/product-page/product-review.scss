@@ -1,0 +1,132 @@
+.product-review {
+    height: 570px;
+
+    position: relative;
+
+    @media (max-width: 479px) {
+        height: 345px;
+    } 
+}
+
+.product-review__photo {
+    height: 570px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    @media (max-width: 479px) {
+        height: 345px;
+    } 
+}
+
+.product-review__mask{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(227, 144, 104, 0.5), rgba(227, 144, 104, 0.5));
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8;
+
+    @media (max-width: 999px) {
+        display: block;
+    }
+}
+
+.product-review__photo-img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.product-review__content {
+    height: 570px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    position: relative;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        padding-top: 45px;
+        padding-bottom: 29px;
+    } 
+
+    @media (max-width: 479px) {
+        height: 345px;
+    } 
+}
+
+.product-review__play-btn {
+    vertical-align: middle;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+
+        border: 0;
+        background: transparent;
+        box-sizing: border-box;
+        width: 0;
+        height: 12px;
+        background-color: $white;
+    
+        border-color: transparent transparent transparent #D89C70;
+        transition: 100ms all ease;
+        cursor: pointer;
+    
+        // play state
+        border-style: solid;
+        border-width: 6px 0 6px 9px;
+    }
+
+    @media (max-width: 479px) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.product-review__play-text {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+    @media (max-width: 479px) {
+        margin-left: 12px;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 175px;
+    }
+}
+

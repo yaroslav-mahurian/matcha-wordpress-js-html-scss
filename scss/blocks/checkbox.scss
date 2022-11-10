@@ -1,0 +1,133 @@
+.checkbox {
+    display: none;
+    appearance: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox-label {
+    cursor: pointer;
+} 
+
+.checkbox + .checkbox-label {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    white-space: nowrap;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:before {
+        content: '';
+        display: block;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+
+        background-color: #FFFFFF;
+        border: 1px solid #E1E1E1;
+        border-radius: 50%;
+    }
+
+    &--cart {
+        padding: 10px;
+        padding-right: 0px;
+
+        background: none;
+        border-radius: 4px;
+
+        &:before {
+            width: 16px;
+            height: 16px;   
+        }
+
+        .product-head__subsc-title {
+            padding-left: 0px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 170%;
+            color: #D89C70;
+        }
+
+        .checkbox-label__text {
+            padding-left: 8px;
+        }
+    }
+
+
+    @media (max-width: 999px) {
+        &--cart {
+            padding: 8px 8px;
+            padding-right: 0px;
+
+            .product-head__subsc-title {
+                font-size: 10px;
+            }
+            background: none;
+        }
+
+        .checkbox-label__info {
+            margin-left: 15px;
+
+            & svg {
+                width: 9px !important;
+                height: 8px !important;
+            }
+        }
+        
+    }
+
+
+}
+
+.product-section, .product-bar {
+    .checkbox + .checkbox-label {
+        &:before {
+            background: #FFFFFF;
+            border-radius: 0.3em;
+        }
+        
+    }
+}
+
+.checkbox:checked + .checkbox-label {
+    &:before {
+        box-shadow: 0px 0px 0px 5px rgb(255, 255, 255) inset;
+        
+        background-color: #D89C70;
+    }
+
+    .product-head__subsc-title {
+        color: #D89C70;
+    }
+
+    &--cart {
+        &:before {
+            box-shadow: 0px 0px 0px 4px rgb(255, 255, 255) inset;
+        }  
+    }
+}
+
+.product-section, .product-bar {
+    .checkbox:checked + .checkbox-label {
+        &:before {
+            background-color: none;
+            box-shadow: none;
+            background: url(../img/icons/check.svg) center center / 80% no-repeat;
+    
+        }
+    }
+}
+
+.checkbox-label__text {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 24px;
+
+    @media (max-width: 767px) {
+        padding-left: 16px;
+    }
+}
+

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <title>MATCHA&CO</title>
+</head>
+<body>
+
+    <div class="fixed-info" id="fixedInfoBlock">
+        <div class="container">
+            <div class="fixed-info__inner">
+                FREE shipping on orders over £55!
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container container--header">
+            <div class="header__inner">
+                <button id="headerBurger" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <a href="#" class="header__logo">
+                    <img id="logoDark" src="./img/logo-dark.svg" alt="imadi-logo" class="header__logo-img">
+                    <img id="logoWhite" src="./img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                </a>
+                <nav id="menuWrapper" class="nav">
+                        <div class="nav-wrapper">
+                            <a href="#" class="nav__link">Products</a>
+                            <a href="#" class="nav__link">Subscription</a>
+                        </div>
+                        <div class="nav-wrapper">
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Matcha</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="./img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Tea</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="./img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Supplements</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="./img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="nav__link nav__link--login">Log in</a>
+                        </div>
+                </nav>
+
+                <div class="header__cart">
+                    <a href="#" class="cart">
+                        <img src="./img/icons/cart.svg" alt="cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+     
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">
+                    It’s time to get healthier <span class="intro__title-dot">.</span>
+                </h1>
+                <h2 class="intro__subtitle">Tea products to boost your health from within.</h2>
+
+                <div class="intro__shop-btn">
+                    <div class="btn-container btn-container--center">
+                        <a href="#" class="btn btn--white-bg"><span class="btn__title">SHOP NOW</span></a>
+                    </div>
+                </div>
+
+                <div class="intro__discover-btn">
+                    <div class="btn-container btn-container--center">
+                        <a href="#" class="btn btn--intro"><span class="btn__title">DISCOVER THE SECRETS</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h3 class="section__label">FEATURED BY</h3>
+            <div class="featured__wrapper">
+
+                <div class="swiper-container swiper-featured">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide featured-slide">
+                        <div class="featured__item">
+                            <div class="featured__logo">
+                                <img src="./img/featured/mailonline.png" alt="featured-logo" class="featured__logo-img">
+                            </div>
+                            <p class='featured__text'>“Antioxidant and full of vitamins: discover all about matcha tea”</p>
+                            
+                        </div>
+                      </div>
+                      <div class="swiper-slide featured-slide">
+                        <div class="featured__item">
+                            <div class="featured__logo">
+                                <img src="./img/featured/marieclaire.png" alt="featured-logo" class="featured__logo-img">
+                            </div>
+                            <p class='featured__text'>“Continued consumption helps fight aging and cell deterioration”</p>  
+                            </div>
+                      </div>
+                      
+                      <div class="swiper-slide featured-slide">
+                        <div class="featured__item">
+                            <div class="featured__logo">
+                                <img src="./img/featured/cosmopolitan.png" alt="featured-logo" class="featured__logo-img">
+                            </div>
+                            <p class='featured__text'>“Delicious packs; Our favorite includes two varieties of organic matcha”</p>
+                            
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide featured-slide">
+                        <div class="featured__item">
+                            <div class="featured__logo">
+                                <img src="./img/featured/realsimple.png" alt="featured-logo" class="featured__logo-img">
+                            </div>
+                            <p class='featured__text'>“Antioxidant and full of vitamins: discover all the benefits of matcha tea”</p>
+                        </div>
+                      </div>                     
+    
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-pagination-wrapper">
+                    <div class="swiper-pagination swiper-section-pagination featured-pagination">
+                        <div class="swiper-section-pagination__el featured-pagination__el swiper-section-pagination__el--active"></div>
+                        <div class="swiper-section-pagination__el"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="container">
+            <h3 class="section__label">Our Benefits</h3>
+            <h2 class="section__title">Feel better.</h2>
+            <h3 class="section__subtitle mw-subtitle">Improve your mood and physical well-being</h3>
+        </div>
+        <div class="benefits__wrapper">
+
+            <div class="swiper-container swiper-benefits">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide benefits-slide">
+                        <div class="benefits__item">
+                            <div class="benefits__content">
+                                <div class="benefits__photo">
+                                    <img src="./img/benefits/supp_photo.png" alt="benefits-img" class="benefits__photo-img">
+                                    <img src="./img/benefits/supp_icon.png" alt="benefits-icon" class="benefits__icon">
+                                </div>
+                                    <h2 class="benefits__title">Supplements</h2>
+                                    <div class="benefits__subtitle">Specific to improve your
+                                        digestion, skin, hair and nails</div>
+                            </div>
+                            
+                                <div class="benefits__btn">
+                                    <div class="btn-container btn-container--center">
+                                        <a href="#" class="btn btn--main-bg"><span class="btn__title">Discover all</span></a>
+                                    </div>
+                                </div>
+                        </div>
+                
+    
+                    </div>
+                    
+                    <div class="swiper-slide benefits-slide">
+                        <div class="benefits__item">
+                            <div class="benefits__content">
+                                <div class="benefits__photo">
+                                    <img src="./img/benefits/tea_photo.png" alt="benefits-img" class="benefits__photo-img">
+                                    <img src="./img/benefits/tea_icon.png" alt="benefits-icon" class="benefits__icon">
+                                </div>
+                                    <h2 class="benefits__title">Powdered Tea</h2>
+                                    <div class="benefits__subtitle">The best quality and
+                                        antioxidant concentration</div>
+                            </div>
+                            
+                            <div class="benefits__btn">
+                                <div class="btn-container btn-container--center">
+                                    <a href="#" class="btn btn--main-bg"><span class="btn__title">Discover all</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide benefits-slide">
+                        <div class="benefits__item">
+                            <div class="benefits__content">
+                                <div class="benefits__photo">
+                                    <img src="./img/benefits/food_photo.png" alt="benefits-img" class="benefits__photo-img">
+                                    <img src="./img/benefits/food_icon.png" alt="benefits-icon" class="benefits__icon">
+                                </div>
+                                    <h2 class="benefits__title">Food</h2>
+                                    <div class="benefits__subtitle">Reduce anxiety <br>
+                                        with healthy food</div>
+                            </div>
+                            
+                            <div class="benefits__btn">
+                                <div class="btn-container btn-container--center">
+                                    <a href="#" class="btn btn--main-bg"><span class="btn__title">Discover all</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination-wrapper swiper-pagination-wrapper--benefits">
+                <div class="swiper-pagination swiper-section-pagination benefits-pagination">
+                    <div class="swiper-section-pagination__el benefits-pagination__el swiper-section-pagination__el--active"></div>
+                    <div class="swiper-section-pagination__el"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reasons">
+        <div class="reasons__mask"></div>
+        <div class="container">
+            <div class="reasons__content">
+                <h3 class="section__label"> 
+                    <span class="mobile-hidden-text">WHY TEA POWDER?</span>
+                     
+                    <span class="desktop-hidden-text">
+                        12 resons
+                    </span>
+                </h3>
+                <h2 class="section__title">
+                    <span class="desktop-hidden-text">Why tea powder?</span>
+                     
+                    <span class="mobile-hidden-text">
+                        12 reasons
+                    </span>
+                </h2>
+                <h3 class="section__subtitle">Incorporate it into your routine and <br>
+                you will notice the difference.</h3>
+            </div>
+        </div>
+        <div class="reasons__btn">
+            <div class="btn-container btn-container--center">
+                <a href="#" class="btn btn--transp"><span class="btn__title">DISCOVER ITS SECRETS</span></a>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="brief-info">
+        <div class="container">
+                <h3 class="section__label">YOUR WELL-BEING ABOVE ALL</h3>
+                <h2 class="section__title">Love it, or it’s on us.</h2>
+                <h3 class="section__subtitle">Here’s why we know you will.</h3>
+
+                <div class="brief-info__wrapper">
+
+                    <div class="swiper-container swiper-brief-info">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide brief-info-slide">
+                            <div class="brief-info__item">
+                                <div class="brief-info__icon">
+                                    <img src="./img/brief-info/hands.svg" alt="brief-icon">
+                                </div>
+                                <h3 class="brief-info__title">
+                                    Try it risk-free 
+                                </h3>
+                                <p class="brief-info__desc">
+                                    If you don't like the product, <br>
+                                        we refund you.
+                                </p>
+                            </div>
+                          </div>                  
+        
+                          <div class="swiper-slide brief-info-slide">
+                            <div class="brief-info__item">
+                                <div class="brief-info__icon">
+                                    <img src="./img/brief-info/natural.svg" alt="brief-icon">
+                                </div>
+                                <div class="brief-info__content">
+                                    <h3 class="brief-info__title">
+                                        100% natural ingredients
+                                    </h3>
+                                    <p class="brief-info__desc">
+                                        Without unnecessary additives and <br> without GMOs with ecological certificate.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                          </div>
+                          <div class="swiper-slide brief-info-slide">
+                            <div class="brief-info__item">
+                                <div class="brief-info__icon">
+                                    <img src="./img/brief-info/delicious.svg" alt="brief-icon">
+                                </div>
+                                <div class="brief-info__content">
+                                    <h3 class="brief-info__title">
+                                    Delicious taste 
+                                </h3>
+                                <p class="brief-info__desc">
+                                    Por su calidad excepcional, <br>
+                                        notarás la diferencia.
+                                </p></div>
+                                
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="swiper-pagination-wrapper">
+                        <div class="swiper-pagination swiper-section-pagination brief-info-pagination">
+                            <div class="swiper-section-pagination__el brief-info-pagination__el swiper-section-pagination__el--active"></div>
+                            <div class="swiper-section-pagination__el"></div>
+                        </div>
+                    </div>
+
+                    
+                    
+                   
+
+
+                </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h3 class="section__label">TESTIMONIALS</h3>
+            <h2 class="section__title">What our customers say.</h2>
+
+            <div class="testimonials__wrapper">
+                <div class="swiper-container swiper-testimonials">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__text">
+                                    <div class="testimonials-slide__title">
+                                        Kate
+                                    </div>
+                                    <div class="testimonials-slide__desc">
+                                        ”I’d been to five doctors over seven years and nothing worked. I took this, and instantly, I felt better. I turned to Kate and said I like this, I like this, it’s good - it works!”
+                                    </div>
+                                </div>
+    
+                                <div class="testimonials-slide__video">
+                        
+                                        <img src="./img/testimonials/photo-1.png" alt="testimonials-photo" class="testimonials-slide__video-img">
+ 
+                                    
+                                    <a class="testimonials__play-btn" href="./video/testimonials/video-example.mp4" data-fancybox data-caption=""></a>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="swiper-slide testimonials-slide">
+                            <div class="testimonials-slide__wrapper">
+                                <div class="testimonials-slide__text">
+                                    <div class="testimonials-slide__title">
+                                        Kate
+                                    </div>
+                                    <div class="testimonials-slide__desc">
+                                        ”I’d been to five doctors over seven years and nothing worked. I took this, and instantly, I felt better. I turned to Kate and said I like this, I like this, it’s good - it works!”
+                                    </div>
+                                </div>
+    
+                                <div class="testimonials-slide__video">
+                        
+                                        <img src="./img/testimonials/photo-1.png" alt="testimonials-photo" class="testimonials-slide__video-img">
+ 
+                                    
+                                    <a class="testimonials__play-btn" href="./video/testimonials/video-example.mp4" data-fancybox data-caption=""></a>
+                                </div>
+                            </div>
+                      </div>
+    
+                    </div>
+                    
+                </div>
+    
+                    <div class="testimonials__pagination-wrapper">
+                        <div class="swiper-pagination swiper-section-pagination swiper-section-pagination--testimonials testimonials-pagination">
+                        </div>
+                    </div>
+    
+                <div class="swiper-nav-btns swiper-nav-btns--testimonials">
+                    <div id="swiperTestimonialsBtnPrev" class="swiper-button-prev swiper-button-prev--no-indent">
+                        <img class="swiper-button-icon" src="./img/icons/arrow-prev-gray.svg" alt="btn-prev">
+                    </div>
+                    <div id="swiperTestimonialsBtnNext" class="swiper-button-next swiper-button-next--no-indent">
+                        <img class="swiper-button-icon" src="./img/icons/arrow-next-gray.svg" alt="btn-next">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feed">
+        <div class="container">
+            <h3 class="section__label">@matchaandco</h3>
+            <h2 class="section__title">Let’s be friends.</h2>
+            <h3 class="section__subtitle">Share your moments with @matchaandco</h3>
+        </div>
+
+        <div class="feed__wrapper">
+
+        </div>
+
+        <div class="feed__btn">
+            <div class="btn-container btn-container--center">
+                <a href="#" class="btn btn--transp"><span class="btn__title">Follow us on Instagram</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="notice">
+        <h2 class="section__title section__title--notice">You deserve this.</h2>
+        <h3 class="section__subtitle">Let’s get you feeling better. <br>
+            Your mind and body will thank you.</h3>
+
+            <div class="notice__btn">
+                <div class="btn-container btn-container--center">
+                    <a href="#" class="btn btn--main-bg"><span class="btn__title">VIEW ALL PRODUCTS</span></a>
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col-group">
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">EVERYTHING ABOUT MATCHA</div>
+                                <div class="footer__dropdown-icon">
+                                                  
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">What is Matcha</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Properties of matcha tea</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha tea benefits</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">How to prepare</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Buyers’ Guide</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">SUPPORT</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Privacy Policy</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Contact us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">ABOUT US</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">About us</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Wholesale</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--info">
+                    <h3 class="footer__title footer__title--info">Subscribe to our Newsletter</h3>
+                    <h4 class="footer__subtitle">Get a 10% coupon discount on your 
+                        first order</h4>
+                    
+                    
+                    <form class="footer__form">
+                        <input class="footer__input" type="text" placeholder="Enter your email address">
+                        <div class="footer__btn">
+                            <div class="btn-container btn-container--center">
+                                <button type="submit" class="btn btn--main-bg btn--footer-form"><span class="btn__title btn__title--footer-form">Subscribe</span>
+                                <img class="btn__title-icon btn__title-icon--footer" src="./img/icons/send.svg" alt="send-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer__hr">
+            <div class="footer__bottom">
+                <div class="footer__bottom-group">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                    </a>
+                    <div class="footer__copyright">
+                        © 2021 matchaandco.co.uk <br>
+                        All rights reserved
+                    </div>
+                </div>
+                <div class="footer__bottom-group">
+                    <div class="footer__bottom-btn">
+                        <div class="btn-container btn-container--center">
+                            <button type="submit" class="btn btn--main-bg-l"><span class="btn__title">Contact Us</span></button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">
+                            <img src="./img/socials/facebook.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="./img/socials/twitter.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="./img/socials/instagram.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="index.bundle.js"></script>
+</body>
+</html>

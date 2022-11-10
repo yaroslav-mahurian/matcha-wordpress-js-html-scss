@@ -1,0 +1,151 @@
+
+.page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & li {
+    margin-right: 10px;
+    width: 35px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $white;
+    background-color: $main;
+    border-radius: 0.3em;
+
+    transition: background-color .1s ease-out, border-color .1s ease-out;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+    & a {
+        width: 100%;
+        height: 100%;
+        color: #705F5E;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 14px;
+
+        transition: color .1s ease-out;
+    }
+
+    & span {
+        color: #705F5E;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 14px;
+
+        transition: color .1s ease-out;
+    }
+
+    .page-pagination__arrow-img {
+        fill: #705F5E;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        background-color: $main;
+        border-color: $main;
+        background-color: lighten($color: $main, $amount: 4%);
+        & span {
+            color: #705F5E;
+        }
+        & a {
+            color: #705F5E;
+            text-decoration: none;
+        }
+    }
+
+    & .current {
+            width: 100%;
+            height: 100%;
+            background-color: lighten($color: $main, $amount: 4%);;
+            border-color: $main;
+            border-radius: 0.3em;
+            color: #705F5E;
+            cursor: default;
+
+        & span {
+            color: #705F5E;
+        }
+        & a {
+            color: #705F5E;
+        }
+        
+    }
+
+    }
+}
+
+.page-pagination__el {
+    margin-right: 10px;
+    width: 35px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $black;
+    background-color: $main;
+    border-radius: 0.3em;
+
+    transition: background-color .1s ease-out, border-color .1s ease-out;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        background-color: $main;
+        border-color: $main;
+        .page-pagination__el-number {
+            color: $white;
+        }
+        .page-pagination__arrow-img {
+            fill: $white;
+        }
+    }
+
+    &--active {
+        background-color: $main;
+        border-color: $main;
+        .page-pagination__el-number {
+            color: $white;
+        }
+    }
+}
+
+.page-pagination__el-number {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+
+    transition: color .1s ease-out;
+}
+
+.page-pagination__el-arrow {
+    &--next {
+        transform: rotate(
+            -90deg
+            ) translate3d(0, -5%, 0);
+    }
+
+    &--prev {
+        transform: rotate(
+        90deg
+        ) translate3d(5%, -5%, 0);
+    }
+}
+
+.page-pagination__arrow-img {
+    fill: $black;
+}

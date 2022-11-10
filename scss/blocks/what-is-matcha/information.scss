@@ -1,0 +1,212 @@
+.information {
+    padding-top: 189px;
+
+    background: rgba(251, 247, 241, 0.6);
+
+    @media (max-width: 767px) {
+        padding-top: 146px;   
+    }
+}
+
+.information__related-products {
+    padding-top: 220px;
+    background-color: $white;
+
+    .product-head__subscr {
+        display: none;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .product-head__subscr-select {
+        display: none !important;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .added_to_cart {
+        display: none !important;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .product-head__simple-price {
+        display: none;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .product-head__subscr-check {
+        display: none;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .variation {
+        .label {
+            display: none;
+            appearance: none;
+            opacity: 0;
+            position: absolute;
+        }
+    }
+
+    .reset {
+        display: none;
+        appearance: none;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .wpcvs-terms {
+        margin: 0 !important;
+        margin-top: 10px !important;
+
+        display: flex !important;
+        justify-content: space-evenly !important;
+        flex-wrap: wrap !important;
+    }
+
+    .wpcvs-term {
+        height: auto !important;
+        min-width: 0 !important;
+        
+        margin: 0;
+        margin-top: 10px;
+        padding: 0.5em 1em;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 150% !important;
+        
+        text-align: center;
+        color: #705F5E;
+
+        border: 1px solid #C0C0C0;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:before, &:after {
+            display: none;
+            appearance: none;
+            opacity: 0;
+            position: absolute;
+        }
+
+        &.wpcvs-selected {
+            color: #D89C70;
+            border: 1px solid #D89C70;
+
+            & span {
+                &:after {
+                    color: #D89C70;
+                }
+            }
+        }
+
+
+        
+        & span {
+            display: inline-block !important;
+            padding: 0 !important;
+            height: auto !important;
+            font-size: 10px;
+            line-height: 150% !important;
+            background-color: transparent !important;
+
+            &:before {
+                display: none;
+                appearance: none;
+                opacity: 0;
+                position: absolute;
+            }
+
+            &:after {
+                content: " GR.";
+                margin-left: 2px;
+
+                display: inline-block;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: inherit;
+                line-height: 150%;
+                
+                color: #705F5E;
+            }
+
+            
+        }
+
+        .wpcvs-term.wpcvs-selected > span:before {
+            display: none;
+            appearance: none;
+            opacity: 0;
+            position: absolute;
+        }
+
+        
+    }
+
+    @media (max-width: 767px) {
+        .wpcvs-term {
+            padding: 0.35em 1em;
+
+            & span {
+                font-size: 9px;
+            }
+        }
+        
+        
+    }
+
+}
+
+.information__related-products__slider {
+    margin-top: 55px;
+
+    position: relative;
+    padding-bottom: 70px;
+
+    .swiper-related-products {
+        @media (max-width: 1439px) {
+            max-width: 950px;
+        }
+    
+        @media (max-width: 1199px) {
+            max-width: 830px;
+        }
+    
+        @media (max-width: 999px) {
+            max-width: 610px;
+        }
+    }
+
+    .prod-cat-product__btn {
+    
+        @media (max-width: 767px) {
+            .btn-container {
+
+        
+                & .btn {
+                    padding: 8px 24px;
+                    overflow: visible;
+                }
+            }
+        } 
+    }
+
+    @media (max-width: 999px) {
+        margin-top: 40px;
+    }
+
+    
+}
+

@@ -1,0 +1,137 @@
+.help {
+    padding-top: 210px;
+
+    background-color: rgba(251, 247, 241, 0.6);
+
+    @media (max-width: 999px) {
+        padding-top: 146px;
+    }
+}
+
+.help-head {
+    padding-bottom: 135px;
+
+    position: relative;
+
+    @media (max-width: 1199px) {
+        padding-bottom: 52px;
+    }
+}
+
+.help-head__subtitle {
+    max-width: 735px;
+    margin: 0 auto;
+
+    @media (max-width: 999px) {
+        max-width: none;
+    }
+}
+
+
+.help-head__contacts {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transform: translate3d(-50%, 50%, 0);
+
+    @media (max-width: 1199px) {
+        margin-top: 32px;
+        position: static;
+
+        flex-direction: column;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.help-head__contacts-el {
+    width: 360px;
+    margin-right: 24px;
+    padding: 55px 59px;
+
+    background-color: $white;
+    box-shadow: 0px 8px 16px rgba(26, 38, 80, 0.06);
+    border-radius: 8px;
+    text-align: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 1199px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 999px) {
+        width: 260px;
+        padding: 32px 0;
+    }
+}
+
+.help-head__contacts-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: rgba(128, 128, 128, 0.8);
+
+    @media (max-width: 999px) {
+        font-size: 16px;
+    }
+}
+
+.help-head__contacts-link {
+    margin-top: 10px;
+
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #D89C70;
+
+    @media (max-width: 999px) {
+        margin-top: 8px;
+        font-size: 16px;
+    }
+}
+
+.help-faq {
+    padding-top: 195px;
+    padding-bottom: 120px;
+
+    background-color: $white;
+
+    @media (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+}
+
+.help-faq__wrapper {
+    margin-top: 50px;
+    padding: 0 95px;
+
+    @media (max-width: 999px) {
+        margin-top: 26px;
+        padding: 0;
+    }
+}
+
+

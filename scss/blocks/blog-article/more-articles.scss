@@ -1,0 +1,134 @@
+.recipe-blog {
+    margin-top: 80px;
+
+    @media (max-width: 999px) {
+        margin-top: 40px;
+    }
+}
+
+.swiper-recipe-blog {
+    @media (max-width: 767px) {
+        background-color: $white;
+    }
+}
+
+.recipe-blog__wrapper {
+    position: relative;
+}
+
+.swiper-recipe-blog-page {
+    .swiper-wrapper {
+
+        height: 100%;
+
+    }
+    
+   /*  @media (max-width: 999px) {
+        .swiper-wrapper {
+            height: auto !important;
+        }
+    } */
+}
+
+
+
+.recipe-blog-slide__wrapper {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: 1199px) {
+        margin: 0 auto;
+        align-items: center;
+
+        max-width: 800px;
+    }
+
+    @media (max-width: 999px) {
+        flex-direction: column;
+        max-width: none;
+    }
+}
+
+.recipe-blog__photo {
+    width: 360px;
+
+    margin-right: 40px;
+    height: 260px;
+
+    @media (max-width: 999px) {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        height: 220px;
+    }
+}
+
+.recipe-blog__photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @media (max-width: 767px) {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+.recipe-blog__content {
+    width: 50%;
+    @media (max-width: 999px) {
+        padding-top: 25px;
+        width: 70%;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 25px;
+        width: 100%;
+
+        border: 1px solid rgba(112, 95, 94, 0.1);
+        border-top: none;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+
+.recipe-blog__short-desc {
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #808080;
+
+    @media (max-width: 767px) {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 12px;
+    }
+}
+
+.recipe-blog__summary {
+    margin-top: 20px;
+    display: flex;
+
+    @media (max-width: 479px) {
+        margin-top: 16px;
+    }
+}

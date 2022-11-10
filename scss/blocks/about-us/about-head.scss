@@ -1,0 +1,29 @@
+.about-head {
+    background: url(../img/about/about-head-bg.png) center bottom / cover no-repeat;
+
+    min-height: 1100px;
+    @media (max-width: 1920px) {
+        min-height: 0;
+        height: 100vh;
+    }
+
+    @media (max-width: 1439px) {
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 300px;
+        background: url(../img/about/about-head-bg-mobile.png) center bottom / cover no-repeat;
+    }
+}
+
+.about-head__inner {
+    padding-top: 280px;
+    padding-bottom: 180px;
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 767px) {
+        padding-top: 150px;
+    }
+}

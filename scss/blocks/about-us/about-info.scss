@@ -1,0 +1,157 @@
+.about-info {
+    padding: 130px 0;
+
+    @media (max-width: 999px) {
+        padding: 70px 0;
+        padding-bottom: 80px;
+    }
+} 
+
+.about-info__wrapper {
+    margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 999px) {
+        margin-top: 32px;
+        flex-direction: column;
+    }
+
+    .swiper-pagination-element {
+        cursor: pointer;
+    }
+}
+
+.about-info__photo {
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 999px) {
+        margin: 0 auto; 
+        width: 290px;
+    }
+    
+}
+
+.about-info__photo-img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-pagination-about-page-wrapper {
+    width: 45%;
+
+    @media (max-width: 999px) {
+        margin-top: 35px;
+    }
+
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+}
+
+.about-info__desc-el {
+    margin-top: 25px;
+    padding: 6px 0;
+
+    border-left: 4px solid rgba(128, 128, 128, 0.1);
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &--active {
+        border-color: #F9D2B5;
+    }
+}
+
+.about-info__desc-title {
+    padding-left: 25px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+
+    letter-spacing: 0.02em;
+
+    color: #705F5E;
+
+    @media (max-width: 999px) {
+        font-size: 16px;
+    }
+}
+
+.about-info__desc-text {
+    margin-top: 12px;
+    padding-left: 25px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #808080;
+}
+
+.about-page-slider {
+    height: 400px;
+    width: 45%;
+
+    .swiper-wrapper {
+        height: 400px;
+    }
+
+    @media (max-width: 999px) {
+        height: 210px;
+        width: 70%;
+        .swiper-wrapper {
+            align-items: center;
+            height: 210px;
+        }
+    }
+
+    @media (max-width: 479px) {
+        width: 100%;
+    } 
+}
+
+.about-page-slide {
+    height: 400px;
+
+    width: 100%;
+
+    .about-info__desc-title {
+        display: none;
+        opacity: 0;
+    }
+
+    .about-info__desc-text {
+        display: none;
+        opacity: 0;
+    }
+
+    @media (max-width: 999px) {
+        height: 210px;
+    } 
+
+  
+}
+
+.about-info__desc-el {
+    .about-info__desc-text {
+        display: none;
+        opacity: 0;
+    }
+
+    &--active {
+        .about-info__desc-text {
+            display: block;
+            opacity: 1;
+        }
+    }
+}

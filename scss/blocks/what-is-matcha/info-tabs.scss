@@ -1,0 +1,141 @@
+.tabs-wrapper {
+    margin-top: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 999px) {
+        padding-bottom: 32px;  
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 32px;
+    }
+}
+
+.tab {
+    margin-right: 20px;
+
+    padding: 12px 20px; 
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-color: transparent;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: rgba(128, 128, 128, 0.5);
+    transition: color .1s ease-out, background-color .1s ease-out;
+  
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #705F5E;
+        background-color: #F9EFE3;
+    }
+
+    &--active {
+        color: #705F5E;
+        background-color: #F9EFE3;
+    }
+
+    @media (max-width: 999px) {
+        display: none;
+        font-size: 14px;
+        line-height: 17px;
+
+        &:hover {
+            text-decoration: none;
+            color: #705F5E;
+            background-color: transparent;
+        }
+
+        &--active {
+            margin-right: 0;
+            font-size: 14px;
+            line-height: 17px;
+    
+            display: block;
+            color: #705F5E;
+            background-color: transparent;
+
+            position: relative;
+        }
+    }
+}
+
+.tabs-desc {
+    padding: 130px 0;
+    background: #F9EFE3;
+
+    @media (max-width: 767px) {
+        padding: 80px 15px;
+    }
+}
+
+.tabs__title {
+    margin: 0 auto;
+    max-width: 730px;
+}
+
+.tabs__subtitle {
+    margin: 0 auto;
+    max-width: 730px;
+}
+
+.tab-nav-btns {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 50;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    @media (max-width: 999px) {
+        display: block;
+    }
+}
+
+.tab-nav-btn-prev, .tab-nav-btn-next {
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    background-color: $white;
+    box-shadow: 0px 8px 18px rgba(52, 61, 85, 0.06);
+
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+
+    & img {
+        width: 8px;
+
+        position: absolute;
+
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    
+}
+
+.tab-nav-btn-prev {
+    right: 70px;
+}
+
+.tab-nav-btn-next {
+    left: 70px;
+}

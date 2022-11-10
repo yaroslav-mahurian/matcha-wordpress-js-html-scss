@@ -1,0 +1,90 @@
+.my-account-wrapper {
+    padding-top: 219px;
+    padding-bottom: 100px;
+
+    @media (max-width: 1199px) {
+        padding-top: 136px;
+        padding-bottom: 50px;
+    }
+}
+
+.woocommerce-EditAccountForm {
+    label {
+        display: none;
+        position: absolute;
+        opacity: 0;
+    }
+}
+
+.my-account__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: 1199px) {
+        display: block;
+    }
+}
+
+.my-account-content__inner {
+    width: 745px;
+
+    @media (max-width: 1199px) {
+        width: 100%;
+
+        &--dash {
+        
+            display: none;
+            appearance: none;
+            position: absolute;
+            
+        }
+    }
+   
+}
+
+.ma-subscr-section {
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 24px;
+    }
+}
+
+.ma-p {
+    padding-left: 0.1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: rgba(128, 128, 128, 0.6);
+    
+    &--mt {
+        margin-top: 12px;
+    }
+
+    &--opacity {
+        color: #808080;
+    }
+
+    @media (max-width: 1199px)  {
+        font-size: 12px;
+    }
+}
+
+.ma-p__link {
+    color: $main;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.woocommerce-edit-account-submit-cont {
+    margin-top: 10px;
+}
+
+

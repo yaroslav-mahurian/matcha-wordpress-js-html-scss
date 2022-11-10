@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <title>MATCHA&CO</title>
+</head>
+<body>
+    <div class="fixed-info" id="fixedInfoBlock">
+        <div class="container">
+            <div class="fixed-info__inner">
+                FREE shipping on orders over £55!
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container container--header">
+            <div class="header__inner">
+                <button id="headerBurger" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <a href="#" class="header__logo">
+                    <img id="logoDark" src="../img/logo-dark.svg" alt="imadi-logo" class="header__logo-img">
+                    <img id="logoWhite" src="../img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                </a>
+                <nav id="menuWrapper" class="nav">
+                        <div class="nav-wrapper">
+                            <a href="#" class="nav__link">Products</a>
+                            <a href="#" class="nav__link">Subscription</a>
+                        </div>
+                        <div class="nav-wrapper">
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Matcha</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Tea</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <div class="nav__dropdown-header">
+                                    <div class="nav__dropdown-title">Supplements</div>
+                                    <div class="nav__dropdown-icon">
+                                        <img class="nav__dropdown-icon-img" src="../img/icons/arrow-down.svg" alt="arrow-down">
+                            
+                                        <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.40808 0C1.0465 0 0.698827 0.136806 0.420687 0.396738C-0.121686 0.930282 -0.121686 1.80584 0.420687 2.33938L4.63451 6.49829L0.40678 10.6572C-0.135593 11.1907 -0.135593 12.0663 0.40678 12.5998C0.949153 13.1334 1.8392 13.1334 2.38157 12.5998L7.5967 7.46961C7.86093 7.20968 8 6.86767 8 6.49829C8 6.12891 7.84702 5.7869 7.5967 5.52697L2.39548 0.396738C2.11734 0.136806 1.75576 0 1.40808 0Z" fill="#705F5E"/>
+                                        </svg>
+                                    </div>       
+                                </div>
+
+                                <ul class="nav__dropdown-body">
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Tea</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Matcha Sets</a></li>
+                                    <li class="nav__dropdown-item"> <a class="nav__dropdown-link" href="">Accessories</a></li>
+                                </ul>
+                            </div>
+
+                            <a href="#" class="nav__link nav__link--login">Log in</a>
+                        </div>
+                </nav>
+
+                <div class="header__cart">
+                    <a href="#" class="cart">
+                        <img src="../img/icons/cart.svg" alt="cart">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="information">
+        <div class="container">
+            <h3 class="section__label">Information</h3>
+            <h2 class="section__title">Everything about matcha green tea</h2>
+
+            <div class="tabs-wrapper">
+                <a href="#" class="tab">
+                    The origin
+                </a>
+                <a href="#" class="tab">Properties</a>
+                <div class="tab tab--active">Benefits
+                    <div class="tab-nav-btns">
+                        <a href="#" class="tab-nav-btn-prev">
+                            <img src="../img/icons/arrow-prev-gray.svg" alt="prev-nav-btn">
+                        </a>
+                        <a href="#" class="tab-nav-btn-next">
+                            <img src="../img/icons/arrow-next-gray.svg" alt="next-nav-btn">
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="tab">Buyer’s Guide</a>
+                <a href="#" class="tab">FAQ</a>
+            </div>
+        </div>
+
+        <div class="tabs-desc">
+            <div class="container">
+                <div class="tabs__title">
+                    <h3 class="section__title section__title--info">Beneficios del té matcha</h3>
+                </div>
+    
+                <div class="tabs__subtitle">
+                    <div class="section__subtitle">Matcha in Japanese means “tea powder”, this powder comes from the best ground green tea leaves. Matcha tea contains countless antioxidants and vitamins that help us stay fit and improve our health.</div>
+    
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="matcha-benefits__wrapper">
+            <div class="container">
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-1.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            01.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Energía, pero con calma...
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-2.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            02.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Puede ayudar a reducir la ansiedad.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-3.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            03.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Una piel en su mejor versión.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-4.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            04.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Mejor concentración.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-5.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            05.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Memoria y salud del cerebro.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-6.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            06.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Reduce riesgos cardiovasculares.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-7.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            07.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Puede ayudar a reducir la retención de líquidos.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-8.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            08.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Mejor salud bucal.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="creation__process-el creation__process-el--matcha-benefits">
+                    <img src="../img/matcha-benefits/icon-9.svg" alt="matcha-benefits-icon" class="creation__process-el__icon creation__process-el__icon--matcha-benefits">
+                    <div class="creation__process-el__content">
+                        <div class="creation__process-el__num creation__process-el__num--matcha-benefits">
+                            09.
+                        </div>
+                        <h3 class="creation__process-el__title creation__process-el__title--matcha-benefits">
+                            Quema grasas.
+                        </h3>
+                        <div class="creation__process-el__desc creation__process-el__desc--matcha-benefits">
+                            El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes. Nosotros lo llamamos estado de calma-alerta.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+
+        <div class="matcha-benefits__book">
+            <div class="container">
+                <div class="matcha-benefits__book-wrapper">
+                    <div class="matcha-benefits__book-photo">
+                        <img src="../img/matcha-benefits/libro-min-1.png" alt="matcha-book">
+                    </div>
+                    <div class="matcha-benefits__book-content">
+                        <div class="matcha-benefits__book-title">
+                            Descubre todo acerca del té matcha con nuestro libro
+                        </div>
+
+                        <div class="matcha-benefits__book-desc">
+                            <span class="matcha-benefits__book-text mobile-hidden">El matcha, con su combinación de cafeína y L-Teanina (una, encargada de que proporcionar energía y la otra, responsable de la calma y conciliación del sueño) hace que, al beber un té matcha, se obtenga energía durante más tiempo que con el café, durante unas 4 – 6 horas, pero que a la vez se evite el nerviosismo y la fatiga posterior que causan otras bebidas excitantes.</span>
+                            
+
+                            <span class="matcha-benefits__book-text desktop-hidden">Planted in the best lands of Kyoto, 20 days before harvesting, the green tea plantation is shaded in order to increase the concentration of chlorophyll, theanine and caffeine, causing its growth to be delayed. This is the moment when tea gets amino acids that give the leaf a sweeter taste.</span>
+                        </div>
+
+                        <div class="matcha-benefits__book-btn">
+                            <div class="btn-container">
+                                <a href="#" class="btn btn--main-bg"><span class="btn__title">More information</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__col-group">
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">EVERYTHING ABOUT MATCHA</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">What is Matcha</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Properties of matcha tea</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha tea benefits</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">How to prepare</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Buyers’ Guide</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Matcha FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">SUPPORT</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Privacy Policy</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Contact us</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__col">
+                        <div class="footer__dropdown">
+                            <div class="footer__dropdown-header">
+                                <div class="footer__dropdown-title">ABOUT US</div>
+                                <div class="footer__dropdown-icon">
+                                                
+                                    <svg class="dropdown-icon-mobile" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.09128 6.5L-1.81535e-08 1.44422L1.45436 0L8 6.5L1.45436 13L-1.45253e-07 11.5558L5.09128 6.5Z" fill="#705F5E"/>
+                                    </svg>
+                
+                                </div>       
+                            </div>
+
+                            <ul class="footer__dropdown-body">
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">About us</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Terms and conditions</a></li>
+                                <li class="footer__dropdown-item"> <a href="#" class="footer__link">Wholesale</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__col footer__col--info">
+                    <h3 class="footer__title footer__title--info">Subscribe to our Newsletter</h3>
+                    <h4 class="footer__subtitle">Get a 10% coupon discount on your 
+                        first order</h4>
+                    
+                    
+                    <form class="footer__form">
+                        <input class="footer__input" type="text" placeholder="Enter your email address">
+                        <div class="footer__btn">
+                            <div class="btn-container btn-container--center">
+                                <button type="submit" class="btn btn--main-bg btn--footer-form"><span class="btn__title btn__title--footer-form">Subscribe</span>
+                                <img class="btn__title-icon btn__title-icon--footer" src="../img/icons/send.svg" alt="send-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="footer__hr">
+            <div class="footer__bottom">
+                <div class="footer__bottom-group">
+                    <a href="#" class="header__logo">
+                        <img src="../img/logo-white.svg" alt="imadi-logo" class="header__logo-img">
+                    </a>
+                    <div class="footer__copyright">
+                        © 2021 matchaandco.co.uk <br>
+                        All rights reserved
+                    </div>
+                </div>
+                <div class="footer__bottom-group">
+                    <div class="footer__bottom-btn">
+                        <div class="btn-container btn-container--center">
+                            <button type="submit" class="btn btn--main-bg-l"><span class="btn__title">Contact Us</span></button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/facebook.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/twitter.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                        <a href="#" class="footer__social">
+                            <img src="../img/socials/instagram.svg" alt="social-icon" class="foooter__social__icon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="../index.bundle.js"></script>
+</body>
+</html>

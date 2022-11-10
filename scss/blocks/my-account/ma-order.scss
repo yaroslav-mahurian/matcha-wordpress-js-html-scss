@@ -1,0 +1,483 @@
+.ma-order {
+    margin-top: 16px;
+    padding: 20px;
+    padding-left: 36px;
+
+    border: 2px solid #FBF7F1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    position: relative;
+
+    &:first-child {
+        margin-top: 20px;
+    }
+    
+    &.is-active {
+        .ma-order__desc {
+            display: flex;
+        }
+
+        .ma-order__products {
+            display: none !important;
+        }
+
+        .ma-order__arrow {
+            transition: transform .1s ease-out;
+            transform: rotate(180deg);
+        }
+
+        .ma-order__color {
+            top: 12px;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .ma-order__count {
+            display: none !important;
+        }
+    }
+
+    
+    @media (max-width: 1199px) {
+        margin-top: 16px;
+        padding: 12px 16px 12px 28px;
+
+        &:first-child {
+            margin-top: 8px;
+        }
+
+        &.is-active {
+            .ma-order__color {
+                top: 14px;
+            }
+        }
+    }
+}
+
+.ma-order__color {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    width: 4px;
+    height: 64px;
+
+    background: $white;
+    border-radius: 79px;
+
+    transform: translate3d(0, -50%, 0);
+
+    @media (max-width: 1199px) {
+        width: 4px;
+        height: 38px;
+        left: 12px;
+    }
+}
+
+.ma-order__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ma-order__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.ma-order__el-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #808080;
+    white-space: nowrap;
+
+    @media (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.ma-order__text-value {
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #705F5E;
+
+    
+    @media (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.ma-order__el {
+    margin-right: 80px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 1199px) {
+        margin-right: 0;
+    }
+}
+
+.ma-order__products {
+    display: none;
+    align-items: center;
+
+    @media (max-width: 1199px) {
+        display: none !important;
+    } 
+    
+}
+
+.ma-order__products-el {
+    margin-right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.ma-order__count {
+    display: none;
+    margin-left: 8px;
+    padding: 5px 8px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 4px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+    align-items: center;
+    text-align: center;
+
+    color: #808080;
+
+    @media (max-width: 1199px) {
+        display: none !important;
+    }
+}
+
+.ma-order__arrow-container {
+    padding: 10px 0;
+    cursor: pointer;
+
+    user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ma-order__arrow {
+    margin-left: 23px;
+}
+
+.ma-order__desc {
+    margin-top: 26px;
+    justify-content: space-between;
+    
+    display: none;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.ma-order__desc-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #705F5E;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.ma-order__desc-content {
+    margin-top: 16px;
+
+    @media (max-width: 1199px) {
+        margin-top: 12px;
+    }
+}
+
+.ma-order__desc-info {
+    width: 25%;
+
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
+}
+
+.ma-order__desc-info-p {
+    max-width: 200px;
+    margin-top: 8px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #808080;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @media (max-width: 1199px) {
+        font-size: 12px;
+        max-width: none;
+    }
+}
+
+.ma-order__desc-products {
+    width: 58%;
+
+    @media (max-width: 1199px) {
+        margin-top: 24px;
+        width: 100%;
+    }
+}
+
+.ma-order__desc-products-wrapper {
+    margin-top: 16px;
+
+    @media (max-width: 1199px) {
+        margin-top: 12px;
+    }
+}
+
+.ma-order__desc-product {
+    margin-top: 16px;
+    padding-right: 15px;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @media (max-width: 1199px) {
+        margin-top: 12px;
+        flex-direction: column;
+    }
+    
+}
+
+.ma-order__desc-product-image {
+    flex-shrink: 0;
+    margin-right: 12px;
+    width: 50px;
+    height: 50px;
+
+    @media (max-width: 1199px) {
+        width:40px;
+        height: 40px;
+    }
+}
+
+.ma-order__desc-product-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    max-width: none !important;
+}
+
+.ma-order__desc-product-wrapper {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1199px) {
+        margin-top: 12px;
+        width: 100%;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.ma-order__desc-product-desc {
+    margin-right: 20px;
+}
+
+.ma-order__desc-product-title {
+    
+    max-width: 200px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #705F5E;
+
+    @media (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.ma-order__desc-product-var {
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #808080;
+
+    @media (max-width: 1199px) {
+        margin-top: 6px;
+    }
+}
+
+.ma-order__desc-product-info-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:first-child {
+        margin-right: 40px;
+    }
+
+    @media (max-width: 1199px) {
+        align-items: flex-start;
+    }
+}
+
+.ma-order__desc-product-heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #808080;
+
+    @media (max-width: 1199px) {
+        font-size: 10px;
+    }
+}
+
+.ma-order__desc-product-value {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #705F5E;
+
+    @media (max-width: 1199px) {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
+
+.ma-order__desc-total {
+    margin-top: 32px;
+
+    @media (max-width: 1199px) {
+        margin-top: 24px;
+    }
+}
+
+.ma-order__desc-total-wrapper {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        .ma-order__desc-total-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #705F5E;
+
+        }
+
+        .ma-order__desc-total-value {
+            font-weight: 600;
+            font-size: 16px;
+            color: #705F5E;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        &:last-child {
+            .ma-order__desc-total-title {
+ 
+                font-weight: 600;
+                font-size: 14px;
+                color: #705F5E;
+            }
+
+            .ma-order__desc-total-value {
+                font-weight: 600;
+                font-size: 14px;
+                color: #705F5E;
+            }
+        }
+    }
+}
+
+.ma-order__desc-total-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #808080;
+
+    
+
+    @media (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.ma-order__desc-total-value {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: right;
+
+    color: #705F5E;
+
+    @media (max-width: 1199px) {
+        font-size: 12px;
+     
+    }
+}

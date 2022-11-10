@@ -1,0 +1,64 @@
+/* Scrollbar */
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  opacity: 0;
+  transition: opacity .1 ease-out;
+
+  @media (max-width: 999px) {
+    opacity: 1;
+  }
+
+
+  background: rgba(128, 128, 128, 0.1);
+  .swiper-container-horizontal > & {
+    position: absolute;
+    left: 1%;
+    bottom: 3px;
+    z-index: 50;
+    height: 5px;
+    width: 98%;
+  }
+
+  .prod-cat__slider > & {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    z-index: 50;
+    height: 3px;
+    width: 100%;
+  }
+  .swiper-container-vertical > & {
+    position: absolute;
+    right: 3px;
+    top: 1%;
+    z-index: 50;
+    width: 5px;
+    height: 98%;
+  }
+
+  @media (max-width: 767px) {
+    .prod-cat__slider > & {
+      left: 15px;
+      width: calc(100% - 25px);
+    }
+    
+  }
+
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(216, 156, 112, 0.5);
+  border-radius: 100px;
+  left: 0;
+  top: 0;
+}
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+.swiper-scrollbar-lock {
+  display: none;
+}

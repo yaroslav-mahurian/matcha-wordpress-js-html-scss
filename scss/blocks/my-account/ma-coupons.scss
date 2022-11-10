@@ -1,0 +1,26 @@
+.woocommerce-account-content-wrapper {
+    .wt-mycoupons {
+        width: 745px;
+
+        & h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 24px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            color: #705F5E;
+
+            
+        }
+
+        @media (max-width: 1199px)  {
+            width: 100%;
+            & h1, h2, h3, h4, h5, h6 {
+                
+                margin-bottom: 16px;   
+            }
+        }
+    }
+}
+

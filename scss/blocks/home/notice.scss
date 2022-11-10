@@ -1,0 +1,12 @@
+.notice {
+    padding-top: 30px;
+    margin-bottom: 105px;
+
+    @media (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}
+
+.notice__btn {
+    margin-top: 32px;
+}

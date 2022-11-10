@@ -1,0 +1,575 @@
+.article {
+    padding-top: 210px;
+    text-align: center;
+
+    #articleHeadAvgRating {
+        .average-rating {
+            display: none;
+            appearance: none;
+            position: absolute;
+            opacity: 0;
+        }
+    }
+
+    .elementor-widget-text-editor + .elementor-widget-text-editor {
+        margin-top: 28px;
+    }
+
+    @media (max-width: 479px) {
+        padding-top: 150px;
+    }
+
+    @media print {
+        padding-top: 10px;   
+    }
+
+    
+}
+
+.article__label {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 2px 10px;
+
+    background-color: #75A39A;
+    border-radius: 4px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+
+    &--recipe-blog {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 12px;
+
+        &--recipe-blog {
+            font-size: 10px;
+            padding: 4px 10px;
+        }
+    }
+}
+
+.article__summary {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 479px) {
+        margin-top: 16px;
+    }
+}
+
+.article__summary-item {
+    margin-right: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 767px) {
+        margin-right: 30px;
+    }
+}
+
+.article__summary-icon {
+    margin-right: 10px;
+}
+
+.article__summary-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #D89C70;
+}
+
+.article__image {
+    /* margin: 80px auto; */
+    width: 100%;
+    border-radius: 12px;
+
+    /* .elementor-widget-container {
+        & img {
+            border-radius: 12px;
+     
+        }
+    }  */
+
+    &--main {
+        margin-top: 50px;
+        margin-bottom: 85px;
+    }
+
+    @media (max-width: 479px) {
+        /* margin: 40px 0; */
+
+        &--main {
+            margin: 40px 0;
+        }
+    }
+}
+
+.article__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+    @media (max-width: 479px) {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.article__title {
+    /* margin-top: 50px;
+    margin-bottom: 28px; */
+    padding: 0 100px;
+
+    font-family: Canela;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 150%;
+
+    color: #705F5E;
+    text-align: left;
+
+    &--print {
+        text-align: center;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    &--recipe-blog {
+        margin-bottom: 28px;
+    }
+
+    @media (max-width: 999px) {
+        padding: 0 25px;
+
+        &--recipe-blog {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 479px) {
+        /* margin-top: 32px;
+        margin-bottom: 20px; */
+        padding: 0;
+
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+.article__subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+
+    letter-spacing: 0.02em;
+
+    color: #705F5E;
+    text-align: left;
+
+    padding: 0 100px;
+
+    @media (max-width: 999px) {
+        padding: 0 25px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 0;
+
+        font-size: 16px;
+        line-height: 170%;
+    }
+}
+
+.article__paragraph {
+    /* margin: 25px 0; */
+    padding: 0 100px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #808080;
+    text-align: left;
+
+    &:first-of-type {
+        &::first-letter {
+            margin-right: 15px;
+            float: left;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 65px;
+
+            color: #705F5E;
+        }
+    }
+
+    &--first-child {
+        &::first-letter {
+            margin-right: 15px;
+            float: left;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 65px;
+
+            color: #705F5E;
+        }
+    }
+
+    @media (max-width: 999px) {
+        padding: 0 25px;
+    }
+
+    @media (max-width: 479px) {
+        /* margin: 20px 0; */
+        font-size: 12px;
+        padding: 0;
+
+        &:first-of-type {
+            &::first-letter {
+                font-size: 60px;
+                line-height: 60px;
+            }
+        }
+
+        &--first-child {
+            &::first-letter {
+                font-size: 60px;
+                line-height: 60px;
+            }
+        }
+    }
+}
+
+/* .article__subtitle + .article__paragraph{
+    margin: 16px 0;
+
+    @media (max-width: 479px) {
+        margin: 12px 0;
+    }
+} */
+
+.article__print {
+    /* margin-top: 170px;
+    margin-bottom: 80px; */
+    padding: 210px 250px 60px;
+    background-color: rgba(251, 247, 241, 0.6);
+    border-radius: 12px;
+    position: relative;
+
+    @media (max-width: 999px) {
+        padding: 140px 20px 48px;
+        /* margin-top: 90px;
+        margin-bottom: 40px; */
+    }
+
+    @media print {
+        display: none;   
+    }
+}
+
+.article__print-image {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: -25%;
+    left: 0;
+    right: 0;
+
+    @media (max-width: 999px) {
+        top: -12%;
+        width: 160px;
+        height: 160px;
+    }
+}
+
+
+.article__print-img {
+    border-radius: 50%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article__print-btn {
+    margin-top: 20px;
+}
+
+.article__rating {
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    @media (max-width: 479px) {
+        &--recipe-blog {
+            margin-top: 10px;
+        }
+    }
+}
+
+.article__rating-el {
+    & img[data-review-icon-fill] {
+        display: none;
+    }
+
+    &--onhover {
+
+        & img[data-review-icon-fill] {
+            display: inline;
+        }
+
+        & img[data-review-icon-transp] {
+            display: none;
+        }
+    }
+}
+
+.article__rating-icon {
+    opacity: 0.5;
+
+    &--selected {
+        opacity: 1;
+    }
+
+    &--reviews {
+        opacity: 1;
+        width: 22px;
+        height: 21px;
+    }
+}
+
+.article__rating-reviews-link {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.article__rating-reviews-count {
+    margin-left: 15px;
+}
+
+.article__rating-reviews-count, .article__rating-reviews-desc{
+    display: inline-block;
+    vertical-align: top;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #705F5E;
+}
+
+.article__list {
+    font-family: Montserrat;
+    /* padding: 0 100px;
+    text-align: left;
+
+    @media (max-width: 999px) {
+        padding: 0 25px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 0;
+    } */
+}
+
+.article__list-el {
+    margin: 16px 0;
+    padding-left: 25px;
+    list-style-type: none;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #808080;
+
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #D89C70;
+        border-radius: 50%;
+
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate3d(0, -50%, 0);
+    }
+
+    @media (max-width: 479px) {
+        font-size: 12px;
+        margin: 12px 0;
+        padding-left: 18px;
+        &:before {
+            width: 6px;
+            height: 6px;
+        }
+    }
+}
+
+.article__img-list {
+    /* margin-bottom: 65px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+
+    /* @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 479px) {
+        margin-bottom: 20px;
+    } */
+}
+
+.article__img-list-card {
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+    background-color: transparent;
+   /*  width: 49%; */
+    list-style-type: none;
+    box-shadow: 0px 10px 18px rgba(26, 38, 80, 0.06);
+
+    /* @media (max-width: 767px) {
+        width: 80%;
+    } */
+
+    @media (max-width: 479px) {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+.article__img-list-photo {
+    width: 100%;
+    height: 295px;
+   
+
+    & img {
+        width: 100%;
+        height: 100% !important;
+        object-fit: cover;
+        border-top-left-radius: 12px !important;
+        border-top-right-radius: 12px !important;
+    }
+
+    @media (max-width: 479px) {
+        height: 200px !important;
+    }
+}
+
+
+.article__img-list-desc {
+    padding: 42px 32px;
+
+    background-color: $white;
+    border-radius: 12px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 170%;
+    color: #808080;
+    text-align: left;
+
+    position: relative;
+
+    @media (max-width: 479px) {
+        padding: 32px 28px;
+
+        font-size: 12px;
+    }
+}
+
+.article__img-list-num {
+    padding: 10px;
+
+    background-color: #75A39A;
+    border-radius: 8px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    top: 0;
+    left: 32px;
+
+    transform: translate3d(0, -50%, 0);
+
+    @media (max-width: 479px) {
+        font-size: 14px;
+    }
+}
+
+.article__reviews {
+    margin-top: 80px;
+    padding-bottom: 110px;
+
+    @media (max-width: 767px) {
+        margin-top: 50px; 
+        padding-bottom: 60px;  
+    }
+
+    @media print {
+        display: none;   
+    }
+}
+
+.article__reviews-link {
+    &:hover {
+        text-decoration: none;
+    }
+}

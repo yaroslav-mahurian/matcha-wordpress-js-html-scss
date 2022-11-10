@@ -1,0 +1,47 @@
+.post-cat {
+    padding-top: 210px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    @media (max-width: 999px) {
+        padding-top: 146px;
+        padding-bottom: 60px;
+    }
+}
+
+
+.post-category__wrapper {
+    margin-top: 50px;
+
+
+    .recipe-blog-slide {
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto; 
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .recipe-blog__content {
+        text-align: left;
+    }
+
+    .post-cat-pagination {
+        margin-top: 50px;
+    }
+
+    
+    @media (max-width: 999px) {
+        margin-top: 30px;
+
+        .recipe-blog-slide {
+            margin-top: 20px;
+        }
+
+        .post-cat-pagination {
+            margin-top: 30px;
+        }
+    }
+}

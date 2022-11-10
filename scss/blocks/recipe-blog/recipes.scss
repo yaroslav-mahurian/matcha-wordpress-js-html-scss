@@ -1,0 +1,9 @@
+.recipe-blog {
+    &--article {
+        @media print {
+            display: none;   
+        }
+    }
+}
+
+

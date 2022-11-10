@@ -1,0 +1,271 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+
+@import "libs/swiper/swiper";
+@import "libs/swiper/components/scrollbar";
+@import "libs/hamburgers/hamburgers";
+@import "libs/select/select";
+
+* {
+    box-sizing: border-box;
+
+    &::first-letter {
+        &::selection {
+            background-color: $main !important;
+        }
+    }
+    &::selection {
+        background-color: $main !important;
+    }
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+.container{
+    max-width: 1125px;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 999px) {
+        padding: 0 15px;
+
+        &--header {
+            flex-basis: 100%;
+        }
+
+        &--mobile-none {
+            margin: 0;
+            max-width: none;
+            padding: 0;
+        }
+    }
+}
+
+#logoDark {
+    display: none;
+}
+
+/* Blocks */
+.block {
+    height: 1500px;
+}
+
+.tal {
+    text-align: left;
+}
+
+.mobile-hidden-text {
+    @media (max-width: 999px) {
+        display: none;
+    }
+}
+
+.mw-subtitle {
+
+    @media (max-width: 999px) {
+        margin: 0 auto;
+        max-width: 230px;
+    }
+    
+}
+
+.desktop-hidden-text {
+    display: none;
+    @media (max-width: 999px) {
+        display: block;
+    }
+}
+
+.mobile-hidden {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.mobile-hidden-st {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.cur-auto {
+    cursor: auto !important;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tar {
+    text-align: right;
+}
+
+
+
+/* Media */
+@import "base/media";
+@import "blocks/fixed-info";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/home/intro";
+@import "blocks/btn";
+@import "blocks/section";
+@import "blocks/swiper-btns";
+@import "blocks/home/notice";
+@import "blocks/footer";
+@import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/checkbox";
+@import "blocks/faq";
+@import "blocks/cart";
+@import "blocks/input";
+@import "blocks/breadcrumbs";
+@import "blocks/woo";
+@import "blocks/page-pagination";
+@import "blocks/loader";
+/* Home */
+@import "blocks/home/featured";
+@import "blocks/home/benefits";
+@import "blocks/home/reasons";
+@import "blocks/home/brief-info";
+@import "blocks/home/testimonials";
+@import "blocks/home/feed";
+
+/* Product categories */
+@import "blocks/product-cat/products";
+
+/* About */
+@import "blocks/about-us/about-head";
+@import "blocks/about-us/about-info";
+@import "blocks/about-us/about-footer";
+
+/* What is matcha */
+@import "blocks/what-is-matcha/information";
+@import "blocks/what-is-matcha/info-tabs";
+@import "blocks/what-is-matcha/creation";
+
+/* Blog article */
+@import "blocks/blog-article/article";
+@import "blocks/blog-article/more-articles";
+@import "blocks/blog-article/post-cat";
+@import "blocks/blog-article/blog-categories";
+
+/* Product page */
+@import "blocks/product-page/product";
+@import "blocks/product-page/product-head";
+@import "blocks/product-page/product-desc";
+@import "blocks/product-page/product-benefits";
+@import "blocks/product-page/product-review";
+@import "blocks/product-page/product-blog";
+@import "blocks/product-page/product-faq";
+@import "blocks/product-page/product-bar";
+@import "blocks/product-page/product-details";
+
+/* Matcha benefits page */
+@import "blocks/matcha-benefits/matcha-benefits";
+
+/* Help page */
+@import "blocks/help-page/help";
+
+/* Recipe blog */
+@import "blocks/recipe-blog/recipes";
+@import "blocks/recipe-blog/recipes-head";
+@import "blocks/recipe-blog/recipes-cat";
+
+/* Reviews page */
+@import "blocks/reviews-page/reviews-page";
+@import "blocks/reviews-page/reviews-page-el";
+@import "blocks/reviews-page/reviews-page-intro";
+
+/* Woo my account */
+@import "blocks/my-account/my-account";
+@import "blocks/my-account/ma-navigation";
+@import "blocks/my-account/ma-section";
+@import "blocks/my-account/ma-dash";
+@import "blocks/my-account/ma-orders";
+@import "blocks/my-account/ma-order";
+@import "blocks/my-account/ma-subscr";
+@import "blocks/my-account/ma-addresses";
+@import "blocks/my-account/ma-coupons";
+@import "blocks/my-account/ma-payments";
+@import "blocks/my-account/login";
+
+/* Checkout */
+@import "blocks/checkout/checkout.scss";
+@import "blocks/checkout/checkout-checkbox.scss";
+@import "blocks/checkout/checkout-radio.scss";
+@import "blocks/checkout/checkout-payment.scss";
+
+/* Thankyou */
+@import "blocks/thankyou/thankyou.scss";    
+
+
+@media (max-width: 1439px) {
+    
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 999px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

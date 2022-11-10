@@ -1,0 +1,96 @@
+/* Customize the label (the container) */
+.checkout__option-radio-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 170%;
+    color: #705F5E;
+
+    @media (max-width: 999px) {
+        font-size: 12px;
+    }
+  }
+  
+  /* Hide the browser's default radio button */
+  .checkout__option-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #E1E1E1;
+
+    border-radius: 50%;
+    transform: translate3d(0, -50%, 0);
+
+    @media (max-width: 999px) {
+        width: 18px;
+        height: 18px;
+    }
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkout__option-radio-container:hover input ~ .checkmark {
+    background-color: rgb(248, 248, 248);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+ /*  .checkout__option-radio-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  } */
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .checkout__option-radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkout__option-radio-container input:checked ~ .checkmark{
+      border-color: #D89C70;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .checkout__option-radio-container .checkmark:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #D89C70;
+
+    @media (max-width: 999px) {
+        width: 8px;
+        height: 8px;
+    }
+  }
+
+  

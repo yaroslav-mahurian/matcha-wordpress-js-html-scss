@@ -1,0 +1,243 @@
+.btn-container {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+
+    &--center {
+        text-align: center;
+    }
+
+    &--right {
+        text-align: right;
+
+        @media (max-width: 479px) {
+            text-align: left;
+        }
+    }
+
+    &--small {
+        font-size: 12px;
+    }
+
+    @media (max-width: 999px) {
+        &--small {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 479px) {
+        font-size: 12px;
+
+        &--login {
+            font-size: 14px;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+
+    font-family: Montserrat;
+    font-weight: 600;
+
+    color: $main-text;
+    background-color: $white;
+    white-space: nowrap;
+    line-height: 1;
+    border: 2px solid transparent;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color .1s ease-out, color .1s ease-out, border-color .1s ease-out, color .3s ease-out;
+
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:before {
+        background-color: $main-text;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        z-index: 1;
+        transition: background-color 0.3s ease, width 0.3s ease;
+        width: 0%;
+        opacity: 0;
+        height: 100%;
+    }
+
+    &--intro {
+        padding: 1em 1.5em;
+        background-color: transparent;
+        border-color: $main-text;
+
+
+        &:hover {
+            color: $white;
+            &:before {
+                transition: background-color 0.3s ease, width 0.3s ease;
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+
+    &--white-bg {
+        background-color: $white;
+
+        &:hover {
+            background-color: lighten($color: $main, $amount: 14%);
+        }
+    }
+
+    &--main-bg {
+        background-color: $main;
+
+        &:hover {
+            background-color: lighten($color: $main, $amount: 4%);
+        }
+    }
+
+    &--main-bg-l {
+        background-color: $main-l;
+
+        &:hover {
+            background-color: lighten($color: $main-l, $amount: 4%);
+        }
+    }
+
+    &--transp {
+        background-color: transparent;
+        border-color: $main-text;
+
+        &:hover {
+            color: $white;
+            &:before {
+                transition: background-color 0.3s ease, width 0.3s ease;
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+
+    &--padding-l {
+        padding: 1em 3.75em;
+    }
+
+    &--checkout {
+        width: 100%;
+    }
+
+    &--small {
+        padding: 0.33em 0.73em;
+    }
+
+    &--inpaid {
+        background-color: #F3C39F;
+    }
+
+    &--paid {
+        background-color: #75A39A;
+    }
+
+    &--login {
+        padding: 1em 8.5em;
+    }
+
+    &--checkout-login {
+        padding: 1em 6em;
+        text-transform: none;
+    }
+
+    &--products {
+        padding: 0.85em 5em;
+        background-color: transparent;
+        border-color: $main-text;
+
+        transition: background-color 0.1s ease-out, border-color 0.1s ease-out;
+
+        & span {
+            font-family: Gotham Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 170%;
+        }
+
+        &:hover {
+            background-color: #FAF4EB;
+            border-color: transparent;
+        }
+    }
+
+    &--product-cat {
+        background-color:rgba(251,247,241,0.6);
+        padding: 0.85em;
+        border: 1px solid #C0C0C0;
+        border-radius: 2px;
+        line-height: 170%;
+
+        transition: background-color 0.1s ease-out, border-color 0.1s ease-out;
+
+        & span {
+            line-height: 170%;
+        }
+
+        &:hover {
+            background-color: #FAF4EB;
+            border-color: transparent;
+        }
+    }
+
+    @media (max-width: 999px) {
+        &--checkout {
+            font-size: 14px;
+        }
+        
+        
+    }
+        
+    @media (max-width: 479px) {
+        &--footer-form {
+            width: 100%;
+            height: 40px;
+            padding: 0.5em;
+            line-height: 27px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &--transp {
+            padding: 1em 1.6em;
+        }
+    }
+} 
+
+.btn__title {
+    position: relative;
+    z-index: 2;
+
+    &--footer-form {
+        @media (max-width: 479px) {
+            display: none;
+        }
+    }
+}
+
+.btn__title-icon {
+    display: none;
+    &--footer {
+        @media (max-width: 479px) {
+            display: block;
+        }
+    }
+}

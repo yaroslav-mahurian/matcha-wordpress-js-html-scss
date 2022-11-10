@@ -1,0 +1,109 @@
+.woocommerce-MyAccount-navigation {
+    background: #FDFAF7;
+    border-radius: 8px;
+    padding: 40px;
+    width: 288px;
+
+    & ul {
+        list-style-type: none;
+
+        & li {
+            margin-top: 20px;
+
+            & a {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 150%;
+                color: rgba(112, 95, 94, 0.6);
+
+                transition: color .1s ease-out;
+
+                &:hover {
+                    color: #D89C70;
+                    text-decoration: none;
+                }
+            }
+            
+
+            &.is-active {
+                & a {
+                    color: #D89C70;
+
+                }
+            }
+        }
+    }
+
+    &--mobile {
+        display: none;
+    }
+
+    @media (max-width: 1199px) {
+        display: none;
+        background: none;
+        width: 100%;
+        padding: 0;
+
+        & ul {
+            width: 100%;
+        }
+
+        & li {
+            margin-top: 8px;
+            display: block;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            & a {
+                font-size: 12px;
+                padding: 12px 20px;
+
+                border: 2px solid #FBF7F1;
+                border-radius: 6px;
+                display: block;
+
+                position: relative;
+            }
+        }
+
+        &--mobile {
+            margin-bottom: 40px;
+            display: block;
+        }
+    }
+}
+
+.ma-nav-arrow {
+    display: none;
+
+
+
+    @media (max-width: 1199px) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+
+        transform: translate3d(0, -50%, 0);
+
+        &--back {
+            transform: translate3d(0, -50%, 0) rotate(180deg);
+        }
+    }
+}
+
+.woocommerce-MyAccount-navigation-link {
+
+    @media (max-width: 1199px) {
+        &--dashboard {
+            display: none !important;
+            appearance: none !important;
+            position: absolute !important;
+        }
+    }   
+    
+}
